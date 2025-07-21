@@ -1,0 +1,44 @@
+
+# For image viewing
+set cleaner    ~/.config/lf/kitty_cleaner
+set previewer   ~/.config/lf/kitty_previewer
+
+# Basic settings
+set ifs "\n"
+set hidden false
+set ignorecase true
+set icons false
+
+# Remove bindings
+map c
+map d
+map m
+
+# Bindings
+map C clear
+map R reload
+map p paste
+map x cut
+map y copy
+map <enter> open
+
+# Toggle hidden files
+map . set hidden!
+
+# Movement bindings
+map gd cd ~/Documents
+map gD cd ~/Downloads
+map gp cd ~/Pictures
+map gv cd ~/Videos
+map gc cd ~/.config
+
+# Make file and directory
+map md push :mkdir<space>""<left>
+map mf push :mkfile<space>""<left>
+
+# Delete
+map dd delete
+
+# Custom functions / commands
+cmd mkdir $mkdir -p "$@"
+cmd mkfile $touch "$@"
