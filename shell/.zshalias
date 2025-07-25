@@ -1,0 +1,24 @@
+
+# Git
+alias lg='lazygit'
+
+# Edit configs
+alias zshrc='nvim ~/.zshrc'
+alias zshenv='nvim ~/.zshenv'
+
+# Custom cds
+alias config='cd ~/.config; ls'
+alias dotfiles='cd ~/dotfiles/'
+
+# Terminal
+alias r='source ~/.zshrc'
+alias c='clear'
+alias q='exit'
+
+alias ls='ls --color=auto --time-style=+%D\ %I:%m\ %p'
+alias cp='cp -i'
+alias mkdir='mkdir -pv'
+
+# Misc
+alias del='trash'
+alias myip='curl ipv4.icanhazip.com'
