@@ -13,3 +13,8 @@ PROMPT='%F{green}%B%n@%m%b %F{blue}%B[%D{%L:%M:%S}]%b%F{white} [%~] %F{blue}%B$%
 # Source
 source ~/.zshalias
 
+# Run fastfetch if available.
+if command -v fastfetch >/dev/null && [ -d ~/.config/fastfetch ]; then
+    fastfetch
+    ls
+fi
