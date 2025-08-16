@@ -28,3 +28,4 @@ alias cd='cdls'
 # Misc
 alias del='trash'
 alias myip='curl ipv4.icanhazip.com'
+alias py='python'
